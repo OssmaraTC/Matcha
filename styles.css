@@ -46,53 +46,59 @@ button{
     padding: 6px 20px;
     margin-left: -10px;
 }
-.header{
-    margin: 8px 16px;
+header{
+    height: 71px;
+    padding: 8px 16px;
     font-size: 0px;
     font-family: sans-serif;
-    height: 45px;
 }
-ul{
-    margin-block-start: 0px;
+.fixed-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fffbf7;
 }
-li{
-    display: inline;
+.logo{
+    height: 47px;
+    padding: 5px 0px;
+    margin-right: 16px;
 }
 .header > * {
     display: inline-block;
     font-size: 16px;
     vertical-align: middle;
-    height: 100%;
-    line-height: 45px;
 }
-.logo {
-    width: 15%;
-}
-.logo img{
-    height: 100%;
+li{
+    display: inline;
 }
 .navbar {
-    width: 69%;
+    width: 70%;
     text-align: center;
     color: #025157;
-    height: 45px;
+    margin-left: 15px;
+    margin-right: 15px;
 } 
 .action {
-    width: 16%;
     text-align: right;
     font-size: 14px;
     font-weight: 600;
 }
 .action > *{
-    margin: 0px 5px;
+    margin: 0px 10px;
+}
+ul{
+    display: inline;
 }
 .menu-item{
-    display: inline;
-    margin: 0px 12.5px;
+    padding: 8px;
     color: #025157;
+    height: 40px;
 }
 .action a{
     color: #67b54b;
+    height: 21px;
+    width: 43.625px;
 }
 .action button{
     color: #fff;
@@ -109,7 +115,7 @@ p{
     margin: 32px 0px 16px;
 }
 figure.intro > img{
-    width: 70%;
+    width: 74%;
 }
 .promo{
     display: flex;
@@ -119,12 +125,11 @@ figure.intro > img{
     margin: 100px auto;
     align-items: center;
 }
-.explanatory-video {
+.explanatory-video{
     flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0px 22px;
 }
 .explanatory-video img {
     width: 120px;
@@ -145,13 +150,6 @@ figure.intro > img{
     color: #343434;
     line-height: 1.5;
     margin-bottom: 20px;
-}
-.fixed-header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: #fffbf7;
 }
 .main{
     margin-top: 285px;
@@ -267,6 +265,40 @@ figure{
     vertical-align: middle;
     border-style: none;
 }
+.how-does-it-work{
+    background-color: #fffbf7;
+    padding: 5% 10%;
+    text-align: center;
+}
+.how-does-it-work .title {
+    color: #025157;
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 400;
+    font-family: "Alegreya", serif;
+    margin-bottom: 8px;
+}
+.how-does-it-work .description {
+    max-width: 60%;
+    color: #46484c;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0 auto;
+    margin-bottom: 16px;
+}
+.how-does-it-work .description a {
+    color: #67b54b;
+    text-decoration: none;
+}
+.how-does-it-work button {
+    font-size: 14px;
+    font-weight: 600;
+    height: 45px;
+    margin-left: 0;
+    border-radius: 8px;
+    margin-top: 6px;
+}
 @media (max-width: 575px){
     .header{
         margin: 20px 20px 0;
@@ -275,11 +307,11 @@ figure{
         display: none;
     }
     .main{
-        margin: 120px 10px 0px;
+        margin: 130px 10px 0px;
         text-align: center;
     }
     .main > h1{
-        font-size: 40px;
+        font-size: 30px;
     }
     .banner img{
         width: 100%;
@@ -293,6 +325,9 @@ figure{
     }
     .publish {
         margin-top: 10px;
+    }
+    .publish > form{
+        flex-direction: column;
     }
     .publish > h3 {
         font-size: 25px;
