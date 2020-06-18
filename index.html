@@ -8,29 +8,55 @@
     <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" 
+      crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="styles.css">
   </head>
   <body>
-    <section class="fixed-header">
-      <header class="header">
-        <a class="logo" href="#">
-          <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/footer_logo.svg" alt="Matcha" />
-        </a>
-        <nav class="navbar">
-          <ul>
-            <li class="menu-item">Platform</li>
-            <li class="menu-item">Pricing</li>
-            <li class="menu-item">Customers</li>
-            <li class="menu-item">Resources</li>
-            <li class="menu-item">About</li>
-          </ul>
-        </nav>
-        <div class="action">
-          <a href="#">Sign In</a>
-          <button>Start free trail</button>
-        </div>
-      </header>
-    </section>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="#">
+        <img
+          src="https://getmatcha.com/wp-content/themes/getmatcha/img/footer_logo.svg"
+          alt="Matcha"
+        />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Platform</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Customers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Resources</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0 action">
+          <a>Sign In</a>
+          <button>Start free trial</button>
+        </form>
+      </div>
+    </nav>
     <section class="main">
       <h1>Build your blog. Build your business.</h1>
       <h4>Instantly publish articles, drive more traffic, grow your email list, and see your blog’s impact on sales.</h4>
@@ -197,6 +223,72 @@
           <img src="https://getmatcha.com/wp-content/uploads/2019/09/brands_group.png" alt="Brands">
         </figure>
       </article>
+      <article class="success-carousel">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="card" style="width: 18rem;">
+                <img src="https://getmatcha.com/wp-content/uploads/2019/06/matt-and-margaret_headshot.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4>Mambe Waterproof Blankets</h4>
+                  <h3>
+                    How Mambe Increased Conversions by 327%, Reduced CPL by 60%
+                  </h3>
+                  <div class="results">
+                    <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/icon_target.png" alt="Target icon">
+                    <p>+327% more popup conversions at a 60% lower cost</p>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <button>See Case Study</button>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card" style="width: 18rem;">
+                <img src="https://getmatcha.com/wp-content/uploads/2019/08/0.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4>Mambe Waterproof Blankets</h4>
+                  <h3>
+                    How Mambe Increased Conversions by 327%, Reduced CPL by 60%
+                  </h3>
+                  <div class="results">
+                    <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/icon_target.png" alt="Target icon">
+                    <p>+327% more popup conversions at a 60% lower cost</p>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <button>See Case Study</button>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card" style="width: 18rem;">
+                <img src="https://getmatcha.com/wp-content/uploads/2019/05/profile-headshot-square.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4>Mambe Waterproof Blankets</h4>
+                  <h3>
+                    How Mambe Increased Conversions by 327%, Reduced CPL by 60%
+                  </h3>
+                  <div class="results">
+                    <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/icon_target.png" alt="Target icon">
+                    <p>+327% more popup conversions at a 60% lower cost</p>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <button>See Case Study</button>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+        </div>        
+      </article>
     </section>
     <section class="how-does-it-work">
       <h2 class="title">
@@ -207,6 +299,69 @@
         to transform your blog into an ecommerce growth engine.
       </p>
       <button>Explore the Platform</button>
+      <div class="steps">
+        <article class="card-step">
+          <div class="card-step-img">
+            <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/ill-publish.png" alt="Publish" class="card-step-bg">
+            <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/icon_content.png" alt="Content icon" class="card-step-icon">
+          </div>
+          <div class="card-step-body">
+            <h3>Publish</h3>
+            <p>
+              Effortlessly fill your blog with content that shoppers want to
+              read.
+            </p>
+            <a href="#">Publish instantly →</a>
+          </div>
+        </article>
+        <article class="card-step">
+          <div class="card-step-img">
+            <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/ill-promote.png" alt="Promote" class="card-step-bg">
+            <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/icon_channels.png" alt="Channels icon" class="card-step-icon">
+          </div>
+          <div class="card-step-body">
+            <h3>Promote</h3>
+            <p>
+              Use articles in email, social, and content ads to attract more
+              site visitors.
+            </p>
+            <a href="#">Drrive morer site visitors →</a>
+          </div>
+        </article>
+        <article class="card-step">
+          <div class="card-step-img">
+            <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/ill-capture.png" alt="Capture" class="card-step-bg">
+            <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/icon_funnel.png" alt="Funnel icon" class="card-step-icon">
+          </div>
+          <div class="card-step-body">
+            <h3>Capture</h3>
+            <p>
+              Turn readers into email subscribers and subscribers into
+              customers.
+            </p>
+            <a href="#">Grow your email list →</a>
+          </div>
+        </article>
+        <article class="card-step">
+          <div class="card-step-img">
+            <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/ill-measure.png" alt="Measure" class="card-step-bg">
+            <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/icon_chart.png" alt="Chart icon" class="card-step-icon">
+          </div>
+          <div class="card-step-body">
+            <h3>Measure</h3>
+            <p>
+              See what’s working and what’s not to easily optimize for more
+              traffic, email subscribers, and sales.
+            </p>
+            <a href="#">Track performance →</a>
+          </div>
+        </article>
+      </div>
     </section>
+    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
   </body>
 </html>
