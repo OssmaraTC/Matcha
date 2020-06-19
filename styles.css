@@ -446,8 +446,8 @@ border-radius: 10px;
     .header{
         margin: 20px 20px 0;
     }
-    .navbar, .action{
-        display: none;
+    .navbar{
+        text-align: left;
     }
     .main{
         margin: 130px 10px 0px;
@@ -466,6 +466,16 @@ border-radius: 10px;
     .explanatory-video > video {
         width: 100%;
     }
+    .signup-form {
+        font-size: 14px;
+        align-items: center;
+    }
+    .signup-form input {
+        width: 60%;
+    }
+    .signup-form button {
+        width: 40%;
+    }
     .publish {
         margin-top: 10px;
     }
@@ -475,5 +485,67 @@ border-radius: 10px;
     .publish > h3 {
         font-size: 25px;
         line-height: 30px;
+    }
+    .features {
+        grid-template-columns: 1fr;
+        padding: 5% 5px;
+    }
+    .feature-card .feature-image{
+        display: none;  
+    }
+    .features .feature-card .feature-content img {
+        width: 50px;
+    }
+    .features .feature-card .feature-content {
+        width: 90%;
+    }
+    .features .feature-card .feature-content h3 {
+        font-family: "Open Sans", sans-serif;
+    }
+    .success-stories{
+        flex-direction: column;
+        padding: 5% 15px;
+    }
+    .success-stories > .overview{
+        padding-right: unset;
+    }
+    .success-stories > .overview > h2{
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .success-stories .stories-carousel .card {
+        min-height: 832px;
+    }
+    .success-stories .stories-carousel .card .card-media img{
+        max-height: unset;
+    }
+    .how-does-it-work {
+        padding: 5% 15px;
+    }
+    .how-does-it-work .title{
+        font-size: 30px;
+    }
+    .how-does-it-work .description {
+        max-width: unset;
+    }
+    .how-does-it-work .steps {
+        grid-template-columns: 1fr;
+    }
+    .how-does-it-work .steps .card-step {
+        margin-left: unset;
+        margin-right: unset;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        position: relative;
+    }
+    .how-does-it-work .steps .card-step .card-step-img {
+        position: initial;
+        height: unset;
+    }
+    .how-does-it-work .steps .card-step .card-step-body h3 {
+        text-align: left;
+        margin-top: 30px;
     }
 }
