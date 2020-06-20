@@ -1,0 +1,22 @@
+$color-fondo-principal: #025157;
+$color-blanco: #ffffff;
+$color-fondo-menu: #D4DEF4;
+$color-lista: #20293B;
+$size-titulo-principal: 28px;
+$size-menu-lista: 22px;
+$altura-seccion: 650px;
+$font-alegreya: "Alegreya", serif;
+$font-open: "Open Sans", sans-serif;
+
+%flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+%flex-row-left {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;;
+    align-items: center;
+} 
