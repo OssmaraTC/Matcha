@@ -1,0 +1,34 @@
+$color-fondo-principal: #025157;
+$color-blanco: #f0f1f4;
+$color-fondo-menu: #D4DEF4;
+$color-lista: #20293B;
+$size-titulo-principal: 28px;
+$size-menu-lista: 22px;
+$altura-seccion:650px;
+$font-alegreya:serif;
+
+.blog{
+    height: $altura-seccion;
+    width: 100%;
+    background-color: $color-fondo-principal;
+    color: $color-blanco;
+    font-family: $font-alegreya;
+    font-size:$size-titulo-principal;
+    border: $color-blanco dotted 2px;
+}
+
+nav{
+    background-color: $color-fondo-menu;
+    ul.menu{
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 auto;
+        padding: 0px;
+        li.item{
+            font-size: $size-menu-lista;
+            color: $color-lista;
+        }
+    }
+}

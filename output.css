@@ -1,0 +1,27 @@
+.blog {
+  height: 650px;
+  width: 100%;
+  background-color: #025157;
+  color: #f0f1f4;
+  font-family: serif;
+  font-size: 28px;
+  border: #f0f1f4 dotted 2px;
+}
+
+nav {
+  background-color: #D4DEF4;
+}
+nav ul.menu {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0px;
+}
+nav ul.menu li.item {
+  font-size: 22px;
+  color: #20293B;
+}
+
+/*# sourceMappingURL=output.css.map */
