@@ -37,7 +37,7 @@
   text-align: left;
   font-family: "Open Sans", sans-serif;
   font-size: 30px;
-  font-weight: 600;
+  font-weight: 500;
 }
 .blog button {
   padding: 12px;
@@ -47,14 +47,17 @@
   border-radius: 8px;
 }
 .blog .card .author img {
-  width: 50px;
+  width: 35px;
   border-radius: 50%;
-  margin-right: 5px;
 }
 .blog .card .author p {
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   margin-top: 10px;
+}
+.blog .card-img-top {
+  flex-shrink: 0;
+  height: 150px;
 }
 
 /*# sourceMappingURL=output.css.map */

@@ -71,9 +71,13 @@ button{
 }
 li{
     display: inline;
+    color: #025157;
 }
 .navbar {
     text-align: center;
+    color: #025157;
+} 
+.navbar-light .navbar-nav .nav-link {
     color: #025157;
 } 
 .action {
@@ -419,9 +423,6 @@ border-radius: 10px;
 .blog .process .process-icon img{
     height: 100%;
 }
-.blog .process .process-description{
-    height: 60px;
-}
 .blog .process > div > h3 {
     color: #025157;
     margin-bottom: 0;
@@ -433,6 +434,24 @@ border-radius: 10px;
     margin: 0;
     font-size: 1rem;
 }
+.blog .card-title{
+    font-size: 24px;
+    color: #4a4a4a;
+}
+.blog .metadata{
+    font-weight: 500;
+    font-size: 14px;
+    color: #979797;
+}
+.blog .metadata .category{
+    color: #67b54b;
+}
+.blog .card-text{
+    color: #4a4a4a;
+    font-size: 18px;
+    line-height: 1.5rem;
+    min-height: 6em;
+}
 .card{
     position: relative;
     display: flex;
@@ -441,6 +460,20 @@ border-radius: 10px;
     background-color: #fff;
     background-clip: border-box;
     border-radius: .25rem; 
+}
+.blog .author{
+    height: 52px;
+}
+.blog .author img {
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+}
+.blog .author p {
+    margin-left: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #4a4a4a;
 }
 @media (max-width: 575px){
     .header{
@@ -469,6 +502,7 @@ border-radius: 10px;
     .signup-form {
         font-size: 14px;
         align-items: center;
+        display: flex;
     }
     .signup-form input {
         width: 60%;
