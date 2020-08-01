@@ -7,7 +7,7 @@ var precioEmpleados = 17;
 var descuento1 = 0.03;
 var descuento2 = 0.05;
 
-var Cliente = function(nombre, correo, telefono){
+var Datos = function(nombre, correo, telefono){
     this.id= crearUUID();
     this.nombre = nombre;
     this.correo = correo; 
@@ -24,8 +24,8 @@ function crearUUID(){
     return uuid;
 }
 
-var Compra = function(nombre, correo, telefono, numCuenta, tipoCliente, numAcciones){
-    Cliente.call(this, nombre, correo, telefono);
+var Cliente = function(nombre, correo, telefono, numCuenta, tipoCliente, numAcciones){
+    Datos.call(this, nombre, correo, telefono);
     this.activo = true;
     this.numCuenta = numCuenta;
     this.tipoCliente = tipoCliente; 
@@ -33,7 +33,7 @@ var Compra = function(nombre, correo, telefono, numCuenta, tipoCliente, numAccio
 }
 
 var Precios = function(tipoCliente, numAcciones, precio, descuento){
-    Compra.call(tipoCliente,numAcciones);
+    Cliente.call(tipoCliente,numAcciones);
     this.precio = function(){
         if (tipoCliente = "Regular"){
             precio = precioClientes;
@@ -56,7 +56,7 @@ var Precios = function(tipoCliente, numAcciones, precio, descuento){
     };
 
 var PrecioTotal = function(nombre,precio,descuento,precioFinal) {
-    Cliente.call(this, nombre);
+    Datos.call(this, nombre);
     Precios.call(this, precio, descuento);
     this.precioFinal = function()
     {
@@ -78,14 +78,14 @@ function registrarNuevoCliente(){
     var tipoCliente = document.getElementById("tipoCliente").value;
     var numAcciones = document.getElementById("numAcciones").value;
     event.preventDefault();
-    registros.push(new Compra(nombre, correo, telefono,numCuenta, tipoCliente, numAcciones));
+    registros.push(new Cliente(nombre, correo, telefono,numCuenta, tipoCliente, numAcciones));
 
     for (var I = 0; I < registros.length; I++){
        nameList = "<li>" + registros[I] + "</li>";
        document.getElementById("name").innerHTML += nameList;
     }
 }
+
 const form = document.getElementById('registro');
 const log = document.getElementById('log');
-form.addEventListener('submit', registrarNuevoCliente);
-}
+form.addEventListener('submit', registrarNuevoCliente);}
