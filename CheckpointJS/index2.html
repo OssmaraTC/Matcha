@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco Santander</title>
+</head>
+<body>
+    
+    <form id="registro">
+        <label>Nombre:</label>
+        <input type="text" id="nombre" ><br><br>
+        <label>Correo:</label>
+        <input type="text" id="correo" ><br><br>
+        <label>Teléfono:</label>
+        <input type="text" id="telefono" ><br><br>
+        <label>Número de Cuenta:</label>
+        <input type="number" id="numCuenta" ><br><br>
+        <label>Tipo de Cliente:</label>
+        <select name="select" id="tipoCliente">
+            <option value="regular">Regular</option> 
+            <option value="inversores" selected>Inversores</option>
+            <option value="empleados">Empleados</option>
+          </select><br><br>
+        <label>Número de Acciones a Comprar:</label>
+        <input type="number" id="numAcciones" ><br><br>
+        <button type="button" onclick="registrarNuevoCliente()">Registrar Compra</button>
+      </form>
+
+      <div id="name"><ul></ul></div>
+      <script src='main.js'></script>
+    </body>
+</html>
